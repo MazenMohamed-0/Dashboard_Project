@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f8ff;
+  
+  }
+
+  
+/*Signup page */ 
+
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  
+
+.signup-container {
+
+    background-color: white;
+    padding: 30px;
+    width: 700px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .name-fields {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: 400;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+  
+    font-size: 15px;
+  }
+  
+  .name-fields .input-group {
+    width: 48%;
+  }
+  
+  .terms {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .terms a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .login-text {
+    margin-top: 20px;
+  }
+  
+  .login-link {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+  .signup-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #1B6B93;
+    color: white;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .signup-btn:hover {
+    background-color: #2980b9;
+  }
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 0;
+  }
+  
+  /* Responsive Design */
+
+  @media (max-width: 768px) {
+    .name-fields {
+        flex-direction: column;
+        width: 100%;
+  
+    }
+    .name-fields .input-group{
+      width: 100%;
+    }
+  
+    .input-group {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .signup-container{
+      width: 500px;
+    }
+  }

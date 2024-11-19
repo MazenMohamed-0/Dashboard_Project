@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f8ff;
+  
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  
+  /*Login page */
+  
+  
+  .login-container {
+    background-color: white;
+    padding: 30px;
+    width: 600px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 25px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: 400;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+  
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .remember-me input {
+    margin-right: 10px;
+  }
+  
+  .forgot-password {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #1B6B93;
+    color: white;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+  
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .signup-text {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  
+  .signup-text a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .signup-text a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+
+    .login-container{
+      width: 500px;
+    }
+  }

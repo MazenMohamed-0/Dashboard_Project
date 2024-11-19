@@ -1,0 +1,185 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .edit-profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #343a40;
+    padding: 20px;
+    color: #fff;
+    min-height: 100vh;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar li {
+    padding: 15px 0;
+    cursor: pointer;
+  }
+  
+  .sidebar li:hover {
+    background-color: #495057;
+  }
+  
+  .profile-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .photo-name-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 700px;
+  }
+  .image-name{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .name-change-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-name {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .change-photo-btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    font-size: 15px;
+   
+  }
+  
+  .change-photo-btn input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    
+  }
+  
+  .edit-profile-form {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .submit-btn {
+    padding: 10px 15px;
+    background-color: #164B60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #16536b;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      min-height: auto;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .profile-content {
+      padding: 10px;
+    }
+  
+    .photo-name-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-photo {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .edit-profile-form {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .change-photo-btn {
+      padding: 8px 10px;
+    }
+  
+    .submit-btn {
+      padding: 8px 10px;
+    }
+  }
+  

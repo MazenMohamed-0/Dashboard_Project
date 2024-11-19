@@ -1,0 +1,21 @@
+.App {
+  display: flex; /* Makes the app a flex container */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.app-container {
+  display: flex; /* Flex container for sidebar and content */
+  width: 100%; /* Full width */
+}
+
+.content {
+  flex: 1; /* Takes the remaining space next to the sidebar */
+  padding: 20px; /* Adds some padding for the content */
+  overflow-y: auto; /* Allows scrolling if content overflows */
+  background-color: #f8f8f8; 
+}
+
+
+
+
+
